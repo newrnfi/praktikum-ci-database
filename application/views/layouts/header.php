@@ -30,8 +30,8 @@
         <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="<?=base_url()?>index.php/pasien/list" class="list-group-item list-group-item-action bg-light">Daftar Pasien</a>
+        <a href="<?=base_url()?>index.php/bmi_pasien/list" class="list-group-item list-group-item-action bg-light">Daftar BMI Pasien</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->

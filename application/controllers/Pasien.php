@@ -31,6 +31,32 @@
 			$this->load->view('pasien/index', $data);
 			$this->load->view('layouts/footer');
 		}
+
+		public function list() {
+			$this->load->model('pasien_model');
+			$patiens = $this->pasien_model->getAll();
+			$data['patiens'] = $patiens;
+			$this->load->view('layouts/header');
+			$this->load->view('pasien/list', $data);
+			$this->load->view('layouts/footer');
+		}
+
+		public function detail($id) {
+			$this->load->model('pasien_model');
+
+			$patien = $this->pasien_model->getById($id);
+
+			if ($patien == NULL) {
+				echo "Data Tidak Ada";
+			}
+			else {
+				$data['patien'] = $patien;
+
+				$this->load->view('layouts/header');
+				$this->load->view('pasien/detail', $data);
+				$this->load->view('layouts/footer');
+			}
+		}
 	}
 
  ?>
