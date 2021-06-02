@@ -17,6 +17,12 @@
 			<tr>
 				<td>Status</td><td>: <?php echo $bmipatien->status_bmi ?></td>
 			</tr>
+			<tr>
+				<td>Catatan</td><td>: <?php echo $bmipatien->catatan ?></td>
+			</tr>
+			<tr>
+				<td>ID Pasien</td><td>: <?php echo $bmipatien->pasien_id ?></td>
+			</tr>
 		</table>
 	</div>
 </div>
